@@ -14,6 +14,6 @@ More information:
 
 See [Under the Hood Here.](https://github.com/kylerosenmeyer/burgerTime2)
 
-See [the Deployed App on Heroku Here.](link)
+See [the Deployed App on Heroku Here.](https://burgertime2-kr.herokuapp.com/)
 
 See **Kyle Rosenmeyer's** [website and entire portfolio here.](https://kylerosenmeyer.github.io/hw2-bootstrap-portfolio/)
