@@ -1,7 +1,7 @@
 {
-  "name": "burgertime",
+  "name": "burgertimetwo",
   "version": "1.0.0",
-  "description": "Burger Restaurant",
+  "description": "Burger Restaraunt 2.0",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,27 +9,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kylerosenmeyer/burgerTime.git"
+    "url": "git+https://github.com/kylerosenmeyer/burgerTime2.git"
   },
   "keywords": [
-    "food",
     "burgers",
-    "chicken",
-    "turkey",
+    "food",
+    "restaruant",
     "beef",
-    "eating",
-    "dining",
-    "restauarant"
+    "app",
+    "menu"
   ],
   "author": "Kyle Rosenmeyer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kylerosenmeyer/burgerTime/issues"
+    "url": "https://github.com/kylerosenmeyer/burgerTime2/issues"
   },
-  "homepage": "https://github.com/kylerosenmeyer/burgerTime#readme",
+  "homepage": "https://github.com/kylerosenmeyer/burgerTime2#readme",
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
-    "mysql": "^2.16.0"
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2"
   }
 }

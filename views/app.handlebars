@@ -1,0 +1,96 @@
+{{!--This is the main wrapper for the burger--}}
+<main class="container-fluid">
+
+  {{!--Top Bun--}}
+  <section class="row topRow">
+    <div class="col-md-12">
+      <h1>Eat Da Burger!</h1>
+      <h2 id="yourName" data-id="{{PatronID}}">{{user}}</h2>
+    </div>
+  </section>
+
+  {{!--Burger Menu--}}
+  <section class="row lettuce">
+
+    <div class="col-md-12 dacurrent">
+      <h3>Burger Menu</h3>  
+      <summary>
+        <ul>
+          {{#each burger}}
+          <li>
+            <p id={{id}}>{{burger_name}}</p>
+            <button type="submit" data-number="{{id}}" class="eatBurger">Eat Da Burger!</button>
+          </li>
+          {{/each}}
+        </ul>
+      </summary>
+
+    </div>
+  </section>
+
+  {{!--Past Burgers--}}
+  <section class="row tomato">
+    <div class="col-md-12 dapast">
+
+      <h3>Past Burgers</h3>
+
+      <details>
+        <summary>See What Has Been Devoured</summary>
+        <ul>
+          {{#each pastburger}}
+          <li>
+            <p id={{id}}>{{burger_name}}</p>
+            <button data-number="{{id}}" class="deleteBurger">Throw Away This Burger</button>
+            <button data-number="{{id}}" class="restoreBurger">Put This Burger Back On The Menu</button>
+          </li>
+          {{/each}}
+        </ul>
+      </details>
+
+    </div>
+  </section>
+
+  {{!--Menu Tools--}}
+  <section class="row beef">
+    <div class="col-md-12 datools">
+
+      <h3>Menu Tools</h3>
+
+      <details>
+        <summary>Work on the Menu</summary>
+        <h3>Add to the Menu</h3>
+        <form id="createBurger" class="button-size">
+
+          <textarea type="text" name="burgerName" id="burgerName"></textarea>
+          <button type="submit" id="addBurger">Add Burger!</button>
+
+        </form>
+
+        <h3>Update the Menu</h3>
+        <form id="updateBurger" class="button-size">
+
+          <div class="custom-select">
+            <select name="id">
+              {{#each burger}}
+                <option value={{id}}>{{burger_name}}</option>
+              {{/each}}
+            </select>
+          </div>
+
+          <textarea type="text" name="burgerUpdate" id="burgerUpdate"></textarea>
+          <button type="submit" id="changeBurger">Update Burger!</button>
+
+        </form>
+      </details>
+
+    </div>
+  </section>
+
+  {{!--Bottom Bun--}}
+  <footer class="row bottomRow">
+    <div class="col-md-12">
+      <p id="copyright">This Burger was made by &copy; Kyle Rosenmeyer</p>
+    </div>
+  </footer>
+
+</main>

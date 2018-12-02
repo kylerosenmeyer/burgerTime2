@@ -7,7 +7,7 @@ var x, i, j, selElmnt, a, b, c;
 x = document.getElementsByClassName("custom-select");
 for (i = 0; i < x.length; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
-  console.log(selElmnt);
+  // console.log(selElmnt);
   /*for each element, create a new DIV that will act as the selected item:*/
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
@@ -19,7 +19,7 @@ for (i = 0; i < x.length; i++) {
     /*for each option in the original select element,d
     create a new DIV that will act as an option item:*/
     c = document.createElement("DIV");
-    console.log(selElmnt.options[j]);
+    // console.log(selElmnt.options[j]);
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.setAttribute("id", selElmnt.options[j].getAttribute("value"));
     c.addEventListener("click", function(e) {

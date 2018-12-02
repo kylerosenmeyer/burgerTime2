@@ -66,6 +66,19 @@ textarea {
 textarea:active, textarea:focus {
     width: 80%;
     outline: none;
+    border-left: 4px solid rgb(0,0,0);
+    border-right: 4px solid rgb(0,0,0);
+    border-top: 2px solid rgb(0,0,0);
+    border-bottom: 2px solid rgb(0,0,0);
+    border-radius: 10px;
+}
+
+input {
+    display: inline-block;
+    margin: 5px auto;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(0,0,0);
+    width: 25%;
 }
 
 summary, select, select:focus, select:active, button:focus, button:active {
@@ -123,5 +136,23 @@ li {
 /*ID Styling*/
 #copyright {
     padding: 10px 0px 0px;
+}
+
+#enterName {
+    text-align: center;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 5px solid rgb(0,0,0);
+    outline: none;
+    margin: 10px;
+    width: 25%;
+    transition: width 0.5s;
+}
+
+#enterName:active, #enterName:focus {
+    outline: none;
+    border: 0px 0px 5px 0px solid black;
+    width: 40%;
 }
 

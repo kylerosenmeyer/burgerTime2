@@ -6,5 +6,7 @@ CREATE TABLE burgers (
 	id INT NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (id),
     burger_name VARCHAR(50) NULL,
-    burger_devoured BOOLEAN DEFAULT FALSE
+    burger_devoured BOOLEAN DEFAULT FALSE,
+    createdAt DATETIME,
+    updatedAt DATETIME
 );
